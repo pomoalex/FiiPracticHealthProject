@@ -32,12 +32,15 @@ public class HealthDB {
         Patient patient1 = new Patient();
         patient1.setId(1L);
         patient1.setName("Martincu Petru");
-        patient1.setId(2L);
-        patient1.setName("Gritcau Sorinel");
+        patients.put(patient1.getId(), patient1);
+        Patient patient2 = new Patient();
+        patient2.setId(2L);
+        patient2.setName("Gritcau Sorinel");
+        patients.put(patient2.getId(), patient2);
     }
 
     public List<Doctor> getDoctors() {
-        return new ArrayList<Doctor>(doctors.values());
+        return new ArrayList<>(doctors.values());
     }
 
     public Doctor getDoctor(Long id) {
@@ -50,7 +53,7 @@ public class HealthDB {
     }
 
     public List<Patient> getPatients() {
-        return new ArrayList<Patient>(patients.values());
+        return new ArrayList<>(patients.values());
     }
 
     public Patient getPatient(Long id) {

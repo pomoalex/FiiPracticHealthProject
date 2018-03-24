@@ -2,7 +2,6 @@ package com.fiipractic.health.controller;
 
 import com.fiipractic.health.model.Patient;
 import com.fiipractic.health.service.PatientService;
-import com.fiipractic.health.service.PatientServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
